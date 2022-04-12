@@ -1,18 +1,13 @@
-alias gs='git status'
-alias gd='git diff'
-alias gds='git diff --staged'
-alias gl='git log'
-alias glo='git log --oneline'
-alias ga='git add'
-alias gA='git add -A'
-alias gr='git restore'
-alias grs='git restore --staged'
-alias grws='git restore --staged --worktree'
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gca='git commit --amend'
-alias gp='git push'
-alias gb='git branch'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
-alias be='bundle exec'
-alias ber='bundle exec rails'
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Add an "alert" alias for long running commands.  Use like so:
+# sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
